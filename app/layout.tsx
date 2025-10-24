@@ -10,12 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="font-sans bg-white">
-        <div className="flex min-h-screen">
+      <body className="font-sans bg-linear-to-r from-pink-700 to-pink-600">
+        
           <PlayerProvider>
           {children}
           </PlayerProvider>
-        </div>
+        
       </body>
     </html>
   );

@@ -173,7 +173,7 @@ console.log(currentTrackInfo)
   const progressPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-linear-to-r from-pink-700 to-pink-600 text-white border-t border-pink-500 shadow-lg">
+    <div className="fixed bottom-0 left-0 w-full bg-linear-to-r from-pink-700 to-pink-600 text-white border-pink-500 shadow-lg">
       {/* Hidden YouTube Player */}
       {/* <div id="youtube-player"></div> */}
       
