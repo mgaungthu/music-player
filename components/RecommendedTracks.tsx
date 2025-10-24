@@ -23,7 +23,7 @@ export default function RecommendedTracks({ tracks }: RecommendedTracksProps) {
   }, [tracks, setPlaylist]);
 
   return (
-    <div className="flex gap-4">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full pb-10">
       {tracks.slice(0, 3).map((rec: any, i: number) => (
         <a
           key={i}
@@ -37,7 +37,7 @@ export default function RecommendedTracks({ tracks }: RecommendedTracksProps) {
           }}
           href="#"
         >
-          <div className="flex flex-col items-center text-center cursor-pointer hover:opacity-80 transition">
+          <div className="flex flex-col items-center text-center cursor-pointer hover:opacity-80 transition w-full">
             <img
               src={rec.strTrackThumb || "/placeholder.jpg"}
               alt={rec.strTrack}
