@@ -1,7 +1,7 @@
 export async function getTopTracks(artist: string) {
   try {
     console.log("🎵 Fetching artist:", artist);
-    const res = await fetch(`http://localhost:3000/api/tracks?artist=${encodeURIComponent(artist)}`);
+    const res = await fetch(`https://music-player-brown-nine.vercel.app/api/tracks?artist=${encodeURIComponent(artist)}`);
     console.log("🔗 Response status:", res.status);
     if (!res.ok) throw new Error("Failed to fetch");
     const data = await res.json();
@@ -15,7 +15,7 @@ export async function getTopTracks(artist: string) {
 
 export async function searchTrack(artist: string, track: string) {
   try {
-    const res = await fetch(`http://localhost:3000/api/tracks?artist=${encodeURIComponent(artist)}&track=${encodeURIComponent(track)}`);
+    const res = await fetch(`https://music-player-brown-nine.vercel.app/api/tracks?artist=${encodeURIComponent(artist)}&track=${encodeURIComponent(track)}`);
     const data = await res.json();
     return data.track?.[0] || null;
   } catch (error) {
