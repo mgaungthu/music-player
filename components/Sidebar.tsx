@@ -7,7 +7,7 @@ export default function Sidebar() {
       <div className="p-6">
         {/* Profile */}
         <div className="flex items-center gap-3 mb-8">
-          <img src="/profile.jpg" alt="Joshua" className="w-10 h-10 rounded-full object-cover" />
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Joshua" className="w-10 h-10 rounded-full object-cover" />
           <div>
             <p className="font-semibold text-gray-800">Joshua</p>
             <span className="text-[10px] bg-gray-100 border border-gray-200 text-gray-600 px-2 py-[1px] rounded">

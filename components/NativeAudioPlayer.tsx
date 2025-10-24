@@ -190,7 +190,7 @@ console.log(currentTrackInfo)
       {/* Player Controls */}
       <div className="flex items-center justify-between px-6 py-4">
         {/* Track Info */}
-        <div className="flex items-center gap-4 flex-1">
+        <div className="hidden md:flex items-center gap-4 flex-1">
           <div className="flex items-center gap-3">
             {currentTrackInfo?.thumbnail || currentTrackInfo?.thumb ? (
               <img
@@ -256,7 +256,7 @@ console.log(currentTrackInfo)
         </div>
 
         {/* Volume Control */}
-        <div className="flex items-center gap-3 flex-1 justify-end">
+        <div className="hidden md:flex items-center gap-3 flex-1 justify-end">
           <Volume2 size={18} />
           <input
             type="range"

@@ -18,9 +18,11 @@ export default async function Page() {
 
   return (
     <>
-      <Sidebar />
+      <div className="hidden md:block">
+        <Sidebar />
+      </div>
       <main className="flex-1 p-8 space-y-8 bg-white">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <MusicCard
             title="GET LOST"
             subtitle="in your music."
@@ -33,7 +35,7 @@ export default async function Page() {
           />
         </div>
 
-        <section className="grid grid-cols-2 gap-6">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <RecentlyPlayed tracks={tracks} />
           </div>
